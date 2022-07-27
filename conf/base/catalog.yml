@@ -17,3 +17,21 @@ model:
   type: pickle.PickleDataSet
   filepath: data/06_models/model.pickle
   versioned: true
+
+age_scaler:
+  type: pickle.PickleDataSet
+  filepath: data/03_intermediate/age_scaler.pickle
+  versioned: true
+
+inference_data:
+  type: pandas.CSVDataSet
+  filepath: data/09_inference/inference_data.csv
+  load_args:
+    sep: ;
+
+predictions:
+  type: json.JSONDataSet
+  filepath: data/09_inference/predictions.json
+  versioned: true
+
+

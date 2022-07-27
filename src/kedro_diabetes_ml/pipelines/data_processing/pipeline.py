@@ -12,7 +12,7 @@ def create_pipeline(**kwargs) -> Pipeline:
             node(
                 func=preprocess_diabetes_data,
                 inputs="diabetes_data",
-                outputs="preprocessed_diabetes_data",
+                outputs=["preprocessed_diabetes_data", 'age_scaler'],
                 name="preprocess_diabetes_data_node",
             ),
         ]

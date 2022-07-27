@@ -21,7 +21,7 @@ def preprocess_diabetes_data(diabetes_data: pd.DataFrame) -> pd.DataFrame:
         Preprocessed data, ready for split.
     """
     diabetes_data['gender'] = diabetes_data['gender'].apply(lambda x: 1 if x=='Female' else 0)
-    scaler = get_age_scaler(diabetes_data)
-    diabetes_data['age'] = scaler.transform(np.array(diabetes_data['age']).reshape((-1, 1)))
+    age_scaler = get_age_scaler(diabetes_data)
+    diabetes_data['age'] = age_scaler.transform(np.array(diabetes_data['age']).reshape((-1, 1)))
 
-    return diabetes_data
+    return diabetes_data, age_scaler

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/vpanc/Library/CloudStorage/OneDrive-SoftServe%2CInc/PeEx/kedro_demo/kedro_diabetes_ml/mlruns/1/e365e410248e44fea7cfec85f5e239f9/artifacts
+end_time: 1657543551976
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: e365e410248e44fea7cfec85f5e239f9
+run_uuid: e365e410248e44fea7cfec85f5e239f9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1657543551329
+status: 4
+tags: []
+user_id: vpanc

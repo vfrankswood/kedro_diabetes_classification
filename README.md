@@ -2,18 +2,25 @@
 
 ## Overview
 
-This is your new Kedro project, which was generated using `Kedro 0.18.1`.
+This project was built using Kedro.
 
 Take a look at the [Kedro documentation](https://kedro.readthedocs.io) to get started.
 
-## Rules and guidelines
+## Project description
 
-In order to get the best out of the template:
+The project generally contains two parts:
+* Model training, validating and saving (data preprocessing pipeline + data science pipeline) pipeline
+* Inference pipeline
 
-* Don't remove any lines from the `.gitignore` file we provide
-* Make sure your results can be reproduced by following a [data engineering convention](https://kedro.readthedocs.io/en/stable/faq/faq.html#what-is-data-engineering-convention)
-* Don't commit data to your repository
-* Don't commit any credentials or your local configuration to your repository. Keep all your credentials and local configuration in `conf/local/`
+
+In order to get the best out of the project:
+
+* use ```kedro viz``` command in your terminal to get visualisation of each pipeline;
+* use ```kedro run``` to trigger default pipeline (data preprocessing + model training and evaluating)
+* use ```kedro run inference``` to trigger inference pipeline and make some predictions;
+* all input/output artifacts are stored in ~/data directory;
+* in order to change parameters for model training, evaluating or inference navigate to ~/conf/base/parameters and choose .yml file with pipeline name you want to modify;
+* explore ~/conf/base/catalog.yml to change artifacts storing and loading options;
 
 ## How to install dependencies
 
